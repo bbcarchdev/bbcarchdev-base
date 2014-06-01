@@ -1,0 +1,3 @@
+This package contains common scripts and configuration shared across all
+Archive Development instances (real hardware, VMs, sandboxes, etc.) and
+all environments.

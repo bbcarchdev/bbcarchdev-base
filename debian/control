@@ -1,0 +1,17 @@
+Source: bbcarchdev-base
+Section: utils
+Priority: important
+Maintainer: Mo McRoberts <mo.mcroberts@bbc.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: https://confluence.dev.bbc.co.uk/display/ADOPS
+Vcs-Git: git://github.com/bbcarchdev/deb-bbcarchdev-base.git
+Vcs-Browser: https://github.com/bbcarchdev/deb-bbcarchdev-base
+
+Package: bbcarchdev-base
+Architecture: any
+Depends: ${misc:Depends}, bbcarchdev-keys, git-core, sudo, netcat-openbsd
+Description: BBC Archive Development base configuration
+ This package contains the base configuration for the BBC Archive Development
+ hosts (across all environments).
+
