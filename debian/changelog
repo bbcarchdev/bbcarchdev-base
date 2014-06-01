@@ -1,3 +1,9 @@
+bbcarchdev-base (2.0) stable; urgency=low
+
+  * Declare that we break older bbcarchdev-sandbox-base.
+
+ -- Mo McRoberts <mo.mcroberts@bbc.co.uk>  Sun, 01 Jun 2014 23:38:45 +0100
+
 bbcarchdev-base (1.0) stable; urgency=low
 
   * Initial release.
