@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/bbcarchdev/deb-bbcarchdev-base
 
 Package: bbcarchdev-base
 Architecture: any
-Depends: ${misc:Depends}, bbcarchdev-keys, git-core, sudo, netcat-openbsd
+Depends: ${misc:Depends}, bbcarchdev-keys, git-core, sudo, netcat-openbsd, lsb-base (>= 3.0-6)
 Breaks: bbcarchdev-sandbox-base (<< 3.0)
 Description: BBC Archive Development base configuration
  This package contains the base configuration for the BBC Archive Development
