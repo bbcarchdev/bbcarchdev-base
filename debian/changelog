@@ -1,3 +1,9 @@
+bbcarchdev-base (4.0) stable; urgency=low
+
+  * Require curl and locales.
+
+ -- Mo McRoberts <mo.mcroberts@bbc.co.uk>  Wed, 11 Jun 2014 00:22:25 +0100
+
 bbcarchdev-base (3.0) stable; urgency=low
 
   * Depend explicitly upon lsb-base (>= 3.0-6) for log_action_msg
