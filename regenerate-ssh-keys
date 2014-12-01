@@ -48,7 +48,7 @@ case "$1" in
 		fi
 	done
 	if test x"$missing" = x"yes" ; then
-		log_action_message "Re-generating SSH host keys" || true
+		log_action_msg "Re-generating SSH host keys" || true
 		/usr/sbin/dpkg-reconfigure openssh-server
 	fi
 	;;
