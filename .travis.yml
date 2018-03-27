@@ -1,0 +1,14 @@
+sudo: required
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get -qq -y install docker-ce
+script:
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker build -t bbcarchdev/bbcarchdev-base:dev docker/bbcarchdev-base:dev
+  - docker push bbcarchdev/bbcarchdev-base:dev
+  - docker build -t bbcarchdev/bbcarchdev-base:stage docker/bbcarchdev-base:stage
+  - docker push bbcarchdev/bbcarchdev-base:dev
+  - docker build -t bbcarchdev/bbcarchdev-base:live docker/bbcarchdev-base:live
+  - docker push bbcarchdev/bbcarchdev-base:live
+  - docker tag bbcarchdev/bbcarchdev-base:live bbcarchdev/bbcarchdev-base:latest
+  - docker push bbcarchdev/bbcarchdev-base:latest
