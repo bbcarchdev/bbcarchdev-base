@@ -3,7 +3,7 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get -qq -y install docker-ce
 script:
-  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - echo "$DOCKER_PASSWORD" | docker login -u="$DOCKER_USERNAME" --password-stdin
   - docker build -t bbcarchdev/bbcarchdev-base:dev docker/bbcarchdev-base:dev
   - docker push bbcarchdev/bbcarchdev-base:dev
   - docker build -t bbcarchdev/bbcarchdev-base:stage docker/bbcarchdev-base:stage
